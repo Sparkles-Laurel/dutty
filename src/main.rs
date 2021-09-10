@@ -6,13 +6,13 @@ fn main() {
         .version("1.0.0") // Version 1.0.0
         .author("Y. Cemal Öztürk <ozturkyigitcemal@gmail.com>") // Author information
         .about("inspects the states of terminal and teletype stdio streams") // What dutty is
-        .usage("dutty [-h | --help] [-V | --version]") // and how to use it
-        );
+        .usage("dutty [-h | --help] [-V | --version]");  // and how to use it
+        
 
     let (is_stdout, is_stdin, is_stderr) = (
         atty::is(Stream::Stdout),
         atty::is(Stream::Stdin),
-        atty::is(Stream::Stderr),
+        atty::is(Stream::Stderr)
     ); // Check wheter the streams are piped
     if is_stdout {
         println!("Standard output is a TERMINAL"); //stdout is terminal
