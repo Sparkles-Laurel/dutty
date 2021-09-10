@@ -7,16 +7,6 @@ fn main() {
         .author("Y. Cemal Öztürk <ozturkyigitcemal@gmail.com>") // Author information
         .about("inspects the states of terminal and teletype stdio streams") // What dutty is
         .usage("dutty [-h | --help] [-V | --version]") // and how to use it
-        .gen_completions(
-            "dutty",
-            Shell::Bash,
-            std::env::var_os("OUT_DIR").unwrap_or_else(|| {
-                // if generating completion scripts for bash fails...
-                eprintln!(
-                    "An error occured while generating completion scripts for your shell. Sorry!"
-                );
-                std::process::exit(127); //... perform a "fake crash"
-            }),
         );
 
     let (is_stdout, is_stdin, is_stderr) = (
