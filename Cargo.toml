@@ -5,7 +5,11 @@ edition = "2018"
 description = """
 Dummy teletype utility
 """
-
+license = "MIT"
+repository = "https://github.com/CadmiumC4/dutty"
+categories = ["command-line-utilities"]
+keywords = ["cli", "atty", "utils"]
+readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
