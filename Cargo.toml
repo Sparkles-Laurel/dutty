@@ -1,6 +1,6 @@
 [package]
 name = "dutty"
-version = "1.0.1"
+version = "1.0.3"
 edition = "2018"
 description = """
 Dummy teletype utility
