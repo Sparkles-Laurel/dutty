@@ -1,0 +1,18 @@
+warning: unused import: `Shell`
+ --> src/main.rs:2:17
+  |
+2 | use clap::{App, Shell};
+  |                 ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `Color`, `self`
+ --> src/main.rs:3:24
+  |
+3 | use crossterm::style::{self, Color, Stylize};
+  |                        ^^^^  ^^^^^
+
+warning: 2 warnings emitted
+
+    Finished dev [unoptimized + debuginfo] target(s) in 0.56s
+     Running `target/debug/dutty`
